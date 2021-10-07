@@ -1,0 +1,5 @@
+version: '3'
+services:
+  scala-common-nlp:
+    image: scala-common-nlp:0.1.0
+    tty: true
