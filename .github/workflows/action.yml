@@ -7,6 +7,7 @@ on:
 env:
   PJ_ACTOR: toposoid
   PJ_REPO: scala-common-nlp
+  PJ_VERSION: 0.1.0
 jobs:
   unit-test_scala-scala-common-nlp:
     runs-on: ubuntu-20.04
@@ -19,7 +20,7 @@ jobs:
         run: |
             cd ${GITHUB_WORKSPACE} && cd ../
             cd ./${{ env.PJ_REPO }}
-            docker build --tag ${{ env.PJ_REPO }}:0.1.0 -f Dockerfile-workflow .
+            docker build --tag ${{ env.PJ_REPO }}:${{ env.PJ_VERSION }} -f Dockerfile-workflow .
             docker-compose -f docker-compose-workflow.yml up -d
             docker-compose -f docker-compose-workflow.yml exec -T ${{ env.PJ_REPO }} bash -c "cd ${{ env.PJ_REPO }} && sbt headerCheck"
             docker-compose -f docker-compose-workflow.yml exec -T ${{ env.PJ_REPO }} bash -c "cd ${{ env.PJ_REPO }} && sbt test:headerCheck"

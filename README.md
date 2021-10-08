@@ -1,5 +1,5 @@
 # scala-common-nlp
-This is a common library used by Linked Ideal LLC. in Scala projects.
+This is a common library used by [Linked Ideal LLC.](https://linked-ideal.com/) in Scala projects.
 The main implementation of this project is related to NLP on Japanese.
 
 ## Requirements
