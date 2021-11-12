@@ -1,6 +1,7 @@
 FROM toposoid/scala-nlp:2.12.12-0.1.0
 
 WORKDIR /app
+ARG TARGET_BRANCH
 
 ENV DEPLOYMENT=local
 ENV _JAVA_OPTIONS="-Xms2g -Xmx4g"
@@ -11,6 +12,7 @@ RUN apt-get update \
 && cd scala-common \
 && sbt publishLocal \
 && cd .. \
-&& git clone https://github.com/toposoid/scala-common-nlp.git \
-&& cp /tmp/wnjpn.db /app/scala-common-nlp/src/main/resources/ \
-&& cp /tmp/entity_vector.model.bin /app/scala-common-nlp/src/main/resources/
+&& git clone https://github.com/toposoid/scala-common-nlp-japanese.git \
+&& git checkout -b ${TARGET_BRANCH} origin/${TARGET_BRANCH} \
+&& cp /tmp/wnjpn.db /app/scala-common-nlp-japanese/src/main/resources/ \
+&& cp /tmp/entity_vector.model.bin /app/scala-common-nlp-japanese/src/main/resources/
