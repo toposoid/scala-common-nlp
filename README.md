@@ -2,6 +2,7 @@
 This is a common library used by [Linked Ideal LLC.](https://linked-ideal.com/) in Scala projects.
 The main implementation of this project is related to NLP on Japanese.
 
+[![Unit Test Action](https://github.com/toposoid/scala-common-nlp-japanese/actions/workflows/action.yml/badge.svg)](https://github.com/toposoid/scala-common-nlp-japanese/actions/workflows/action.yml)
 
 ## Requirements
 Scala version 2.12.x,   
