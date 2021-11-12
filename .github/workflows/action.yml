@@ -8,7 +8,7 @@ on:
 env:
   PJ_ACTOR: toposoid
   PJ_REPO: scala-common-nlp-japanese
-  PJ_BRANCH: refactor-rename-repository
+  PJ_BRANCH: main
   PJ_VERSION: 0.1.0
 jobs:
   unit-test_scala-scala-common-nlp:
