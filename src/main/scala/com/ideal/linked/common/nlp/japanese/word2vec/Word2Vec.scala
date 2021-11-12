@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.ideal.linked.common.nlp.word2vec
+package com.ideal.linked.common.nlp.japanese.word2vec
 
 // Copyright 2013 trananh
 //

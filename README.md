@@ -1,8 +1,7 @@
-# scala-common-nlp
+# scala-common-nlp-japanese
 This is a common library used by [Linked Ideal LLC.](https://linked-ideal.com/) in Scala projects.
 The main implementation of this project is related to NLP on Japanese.
 
-[![Unit Test Action](https://github.com/toposoid/scala-common-nlp/actions/workflows/action.yml/badge.svg?branch=main)](https://github.com/toposoid/scala-common-nlp/actions/workflows/action.yml)
 
 ## Requirements
 Scala version 2.12.x,   
@@ -17,7 +16,7 @@ Please refer to the test code
 ## Note
 
 ## License
-toposoid/scala-common-nlp is Open Source software released under the [Apache 2.0 license](https://www.apache.org/licenses/LICENSE-2.0.html).
+toposoid/scala-common-nlp-japanese is Open Source software released under the [Apache 2.0 license](https://www.apache.org/licenses/LICENSE-2.0.html).
 
 ## Author
 * Makoto Kubodera([Linked Ideal LLC.](https://linked-ideal.com/))

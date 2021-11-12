@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.ideal.linked.common.nlp.word2vec
+package com.ideal.linked.common.nlp.japanese.word2vec
 
 import com.ideal.linked.common.DeploymentConverter.conf
 import com.typesafe.scalalogging.LazyLogging
@@ -33,10 +33,10 @@ object Word2VecAccessor extends LazyLogging{
   val model = new Word2Vec()
   val projectDir:String = new File(".").getAbsoluteFile().getParent()
   if(projectDir.startsWith("/app")) {
-    val modelFile = "/app/scala-common-nlp/src/main/resources/entity_vector.model.bin"
+    val modelFile = "/app/scala-common-nlp-japanese/src/main/resources/entity_vector.model.bin"
     model.load(modelFile)
   }else{
-    val modelFile = projectDir.substring(0, projectDir.lastIndexOf("/")) + "/scala-common-nlp/src/main/resources/entity_vector.model.bin"
+    val modelFile = projectDir.substring(0, projectDir.lastIndexOf("/")) + "/scala-common-nlp-japanese/src/main/resources/entity_vector.model.bin"
     model.load(modelFile)
   }
 

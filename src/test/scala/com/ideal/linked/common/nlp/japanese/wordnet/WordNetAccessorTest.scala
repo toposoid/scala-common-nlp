@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.ideal.linked.common.nlp.wordnet
+package com.ideal.linked.common.nlp.japanese.wordnet
 
 import org.scalatest.{BeforeAndAfter, BeforeAndAfterAll, DiagrammedAssertions, FlatSpec}
 

@@ -6,7 +6,7 @@ ThisBuild / organization     := "com.ideal.linked"
 
 lazy val root = (project in file("."))
   .settings(
-    name := "scala-common-nlp",
+    name := "scala-common-nlp-japanese",
     libraryDependencies += "com.ideal.linked" %% "scala-common" % "0.1.0",
     libraryDependencies += "de.sciss" % "ws4j" % "0.1.0",
     libraryDependencies += scalaTest % Test
