@@ -14,6 +14,7 @@ RUN apt-get update \
 && cd .. \
 && git clone https://github.com/toposoid/scala-common-nlp-japanese.git \
 && cd scala-common-nlp-japanese \
-&& git checkout -b ${TARGET_BRANCH} origin/${TARGET_BRANCH} \
+#&& git checkout -b ${TARGET_BRANCH} origin/${TARGET_BRANCH} \
+&& git checkout ${TARGET_BRANCH} \
 && cp /tmp/wnjpn.db /app/scala-common-nlp-japanese/src/main/resources/ \
 && cp /tmp/entity_vector.model.bin /app/scala-common-nlp-japanese/src/main/resources/
