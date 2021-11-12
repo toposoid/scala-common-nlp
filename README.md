@@ -1,4 +1,4 @@
-# scala-common-nlp-japanse
+# scala-common-nlp-japanese
 This is a common library used by [Linked Ideal LLC.](https://linked-ideal.com/) in Scala projects.
 The main implementation of this project is related to NLP on Japanese.
 
